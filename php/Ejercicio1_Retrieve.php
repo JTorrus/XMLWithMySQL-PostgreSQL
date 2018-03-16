@@ -23,3 +23,4 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 $xmloutput .= "</menu>";
 
 echo $xmloutput;
+file_put_contents("ejercicio1_menu.xml", $xmloutput);
