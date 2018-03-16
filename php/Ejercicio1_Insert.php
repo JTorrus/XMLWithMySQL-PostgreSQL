@@ -16,4 +16,8 @@ foreach ($xml->menjar as $row) {
             VALUES('$name // $price // $category // $description // $calories')";
 
     $result = mysqli_query($conn, $sql);
+
+    if (!$result) {
+        break;
+    }
 }
